@@ -1,5 +1,10 @@
 # google-messages-web-export
 
+> **Primary repository:** Codeberg  
+> https://codeberg.org/prooma/google-messages-web-export  
+>  
+> **GitHub:** read-only mirror (issues and pull requests disabled)
+
 Export chat conversations from **https://messages.google.com/web**
 directly from the browser Developer Tools console.
 
