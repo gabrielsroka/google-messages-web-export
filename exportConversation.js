@@ -44,6 +44,7 @@ function exportConversation(options = {}) {
 
 		parts.forEach(part => {
 			const clone = part.cloneNode(true);
+			document.body.appendChild(clone);
 
 			// Remove link previews
 			clone.querySelectorAll("mws-link-preview-decorator").forEach(el => el.remove());
@@ -64,6 +65,7 @@ function exportConversation(options = {}) {
 			}
 
 			const text = clone.innerText.trim();
+			document.body.removeChild(clone);
 			if (text) out.push(text);
 		});
 
